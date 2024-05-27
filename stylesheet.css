@@ -5,11 +5,11 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;;
+    justify-content: space-between;
     background-color: rgb(60, 92, 128);
     background-image: url("images/header-image.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     margin: 0;
     padding: 4rem 4rem 8rem 4rem;
     max-width: 100%;
@@ -132,7 +132,12 @@ article {
     flex-wrap: wrap;
 }
 
-#pre-gallery {
+.no-stretch {
+    max-width: 100%;
+    height: auto;
+}
+
+.pre-gallery {
     display: flex;
     flex-direction: row;
     border: none;
@@ -172,5 +177,14 @@ footer {
 
 
 
+@media print, screen and (max-width: 800px) {
+    
+    .pre-gallery {
+        flex-direction: column;
+    }
 
+    .pre-gallery-info {
+        margin: 0 auto;
+    }
+}
 
