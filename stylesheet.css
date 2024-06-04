@@ -100,10 +100,54 @@ h2 {
 }
 
 a,
-p {
+p,
+button, 
+input, 
+select, 
+textarea,
+label,
+legend, 
+option {
     font-size: 1rem;
     font-family: "Work Sans", sans-serif;
 }
+
+button, 
+input, 
+select, 
+textarea {
+    display: block;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    display: inline;
+}
+
+input[type=submit] {
+    max-width: 100%;
+    margin-left: 35vw;
+    color: black;
+    background-color: rgb(98, 179, 66);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 8em;
+    box-shadow: none;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(74, 145, 46);
+}
+
+fieldset {
+    border: none;
+}
+
+
 
 a {
     text-decoration: none;
