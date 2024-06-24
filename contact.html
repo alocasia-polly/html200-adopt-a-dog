@@ -34,58 +34,49 @@
         </nav>
 
         <main>
-            <h2>Checkout</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email"><br><br>
-
-                <label for="street">Street Address</label>
-                <input type="text" id="street" name="street"><br><br>
-
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-
-                <label for="state">State</label>
-                <select id="state" name="state">
-                    <option>ID</option>
-                    <option>WA</option>
-                </select>
-
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip"><br><br>
-
-                <h4>First Time Adopter?</h4><br>
+            <h2>Contact</h2>
+            <form method="GET">
+                <h4>Is this message high-priority?</h4>
                 <input type="radio" id="yes" name="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" id="no" name="no">
                 <label for="no">No</label><br><br>
 
-                <label for="location">Pickup Location</label>
-                <select name="location" id="location">
-                    <option>Auburn</option>
-                    <option>Seattle</option>
-                    <option>Spokane</option>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email"><br>
+
+                <label for="messageType">Message Type</label>
+                <select name="messageType" id="messageType">
+                    <option>General Inquiry</option>
+                    <option>Dog Question</option>
+                    <option>Rescheduling Pickup</option>
                 </select> <br><br>
+
+                <fieldset>
+                    <legend>Select what types of dogs you're looking for, if applicable:</legend>
+                    <label>Large Dogs
+                        <input type="checkbox" name="type" value="large">
+                    </label><br>
+                    <label>Small Dogs
+                        <input type="checkbox" name="type" value="small">
+                    </label><br>
+                    <label>Young Dogs
+                        <input type="checkbox" name="type" value="young">
+                    </label><br>
+                    <label>Old Dogs
+                        <input type="checkbox" name="type" value="old">
+                    </label>
+                </fieldset><br>
             
-                <section class="pre-gallery">
-                    <div>
-                        <img src="images/lucas-checkout.jpg" alt="">
-                        <h5>Lucas</h5>
-                    </div>
-                   
-                    <div>
-                        <img src="images/duffy-checkout.jpg" alt="">
-                        <h5>Duffy</h5>
-                    </div>
-                </section>
+                <label> Message
+                    <textarea name="message" rows="4" cols="50">
+                    </textarea>
+                </label><br><br>
 
-                <h4>Total Adoption Cost</h4>
-                <p>$1234.56</p>
-
-                <input type="submit" value="Submit">
+                <input type="submit" value="Send Message">
             </form>
         </main>
 
